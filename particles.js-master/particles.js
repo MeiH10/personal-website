@@ -7,7 +7,6 @@
 /* v2.0.0
 /* ----------------------------------------------- */
 
-alert('hello');
 var pJS = function(tag_id, params){
 
   var canvas_el = document.querySelector('#'+tag_id+' > .particles-js-canvas-el');
