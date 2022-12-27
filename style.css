@@ -1,0 +1,259 @@
+
+/* GLOBAL STYLES */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden
+}
+
+#typewriter_containter{
+    height: 100vh;
+    background: rgb(18,18,18);
+    display: grid;
+    /* justify-content: center; */
+    align-items: center;
+    place-items: center;
+    grid-row-gap: 200px;
+}
+
+.typewriter{
+    align-items: center;
+}
+
+  /* DEMO-SPECIFIC STYLES */
+  .typewriter h1 {
+    font-size: 50px;
+    color: green;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+
+section{
+    width: 100vw;
+    max-width:100%;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.particles {
+    height: 100vh;
+    background: transparent;
+    position:absolute;
+    top: 0;
+}
+
+.pink {
+    background: pink;
+}
+
+.intro {
+  line-height: 1.5em;
+}
+  
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+.socials{
+  z-index: 1;
+  display: flex;
+}
+
+.socials div{
+  margin: 20px;
+}
+
+.logo img{
+  width: 50px;
+}
+
+.logo:nth-child(2){
+  transition-delay: 200ms;
+}
+
+.projStack:nth-child(2){
+  transition-delay: 200ms;
+}
+
+.projStack:nth-child(3){
+  transition-delay: 300ms;
+}
+
+.projStack:nth-child(4){
+  transition-delay: 400ms;
+}
+
+.projStack:nth-child(5){
+  transition-delay: 500ms;
+}
+
+.projStack:nth-child(6){
+  transition-delay: 600ms;
+}
+
+
+
+.stackLogo img{
+  width: 110px;
+}
+
+.projects img{
+  width: 100px;
+}
+
+/* .relExp h1{
+  position: relative;
+  top: -40px;
+} */
+
+/* #experiences {
+  width: 77vw;
+} */
+
+#chess {
+  min-height: 40vh;
+}
+
+#stem {
+  min-height: 40vh;
+}
+
+
+/* #chess div {
+  width: 77vw;
+}
+
+#stem div {
+  width: 77vw;
+} */
+
+/* #experiences h3{
+  font-size: 20px;
+} */
+
+.stackLogo img{
+  margin-top: 30px;
+  margin-bottom: 20px;
+  /* margin-left: 10px; */
+  margin-right: 20px;
+}
+
+.projects {
+  background: rgb(30, 30, 30);
+  min-height: 55vh;
+}
+
+.description {
+  min-height: 45vh;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)
+  ),
+  url("images/rpi.png");
+  min-height: 45vh; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.projects {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)
+  ),
+  url("images/solarsystem.jpg");
+  min-height: 45vh; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.relExp {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)
+  ),
+  url("images/cs.jpg");
+  min-height: 100vh; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#socials{
+  min-height: 20vh;
+}
+
+#chess {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)
+  ),
+  url("images/chess.jpg");
+  min-height: 40vh; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#stem {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)
+  ),
+  url("images/gold.jpg");
+  min-height: 40vh; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.activities{
+  background: rgb(18,18,18);
+}
+
+.contentsBox{
+  width: 87vw;
+}
